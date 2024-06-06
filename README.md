@@ -1,4 +1,4 @@
-## This is a backend project built with Node.js, Express, and TypeScript. It includes linting and formatting tools like ESLint and Prettier for maintaining code quality and consistency.
+## Built with Node.js, Express, Prisma and TypeScript.
 
 ### Development Setup
 

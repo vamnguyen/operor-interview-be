@@ -1,3 +1,6 @@
-node_modules/
-dist/
-build/
+node_modules
+build
+dist
+coverage
+package-lock.json
+package.json
