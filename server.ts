@@ -1,9 +1,9 @@
 import { app } from "./src";
-import { env } from "./src/utils/envConfig";
+// import { env } from "./src/utils/envConfig";
 import { prisma } from "./src/utils/prismaConfig";
 
-const server = app.listen(env.PORT, () => {
-  console.log(`Server is running on http://localhost:${env.PORT}`);
+const server = app.listen(process.env.PORT || 4000, () => {
+  console.log(`Server is running on http://localhost:${process.env.PORT}`);
 });
 
 process.on("SIGINT", async () => {
