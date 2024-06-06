@@ -1,8 +1,8 @@
-// import { env } from "./src/utils/envConfig";
 import { app } from ".";
+import { env } from "./utils/envConfig";
 import { prisma } from "./utils/prismaConfig";
 
-const server = app.listen(process.env.PORT || 4000, () => {
+const server = app.listen(env.PORT, () => {
   console.log(`Server is running on http://localhost:${process.env.PORT}`);
 });
 
