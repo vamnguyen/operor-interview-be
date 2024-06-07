@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" ; exit 1",
     "dev": "npx nodemon",
     "build": "rimraf ./dist && tsc",
-    "start": "node dist/server.js",
+    "start": "npx ts-node src/server.ts",
     "clean": "rimraf dist coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
