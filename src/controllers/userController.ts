@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { fetchUsersWithMeetings } from "~/services/userService";
-import { BadRequestError } from "~/utils/errors";
+import { fetchUsersWithMeetings } from "src/services/userService";
+import { BadRequestError } from "src/utils/errors";
 
 export const getUsers = async (req: Request, res: Response, next: NextFunction) => {
   try {

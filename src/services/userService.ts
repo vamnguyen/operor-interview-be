@@ -1,5 +1,5 @@
-import { prisma } from "~/utils/prismaConfig";
-import { NotFoundError, BadRequestError, InternalServerError } from "~/utils/errors";
+import { BadRequestError, InternalServerError, NotFoundError } from "src/utils/errors";
+import { prisma } from "src/utils/prismaConfig";
 
 export const fetchUsersWithMeetings = async (offset: number, limit: number) => {
   try {

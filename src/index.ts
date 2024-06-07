@@ -2,10 +2,10 @@ import cors from "cors";
 import compression from "compression";
 import express, { Application } from "express";
 import helmet from "helmet";
-import { env } from "~/utils/envConfig";
 import router from "./routes";
 import errorHandler from "./middlewares/errorHandler";
 import rateLimiter from "./middlewares/rateLimiter";
+import { env } from "./utils/envConfig";
 
 export const app: Application = express();
 
