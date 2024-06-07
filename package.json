@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "dist/server.js",
   "scripts": {
+    "postinstall": "npm install tsconfig-paths",
     "test": "echo \"Error: no test specified\" ; exit 1",
     "dev": "npx nodemon",
     "build": "rimraf ./dist && tsc",
